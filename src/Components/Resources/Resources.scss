@@ -1,0 +1,48 @@
+.resCon{
+    width: 80%;
+    margin: 3rem auto;
+    font-family: poppins;
+
+    .react-reveal{
+      animation-duration: 1500ms !important;
+    }
+
+    .heading{
+        font-weight: bold;
+        font-size: 3.5rem;
+    }
+    
+
+    .resGrid{
+        display: grid;
+        margin-top: 2rem;
+        grid-column-gap: 2rem;
+        grid-row-gap: 1rem;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        
+    }
+    
+}
+
+@media all and (max-width: 800px) {
+    .resCon{
+        margin-top: 1.5rem;
+
+        .react-reveal{
+            animation-duration: 1000ms !important;
+        }
+
+        .heading{
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        .resGrid{
+        display: grid;
+        margin-top: 2rem;
+        grid-column-gap: 2rem;
+        grid-row-gap: 1rem;
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        
+        }
+    }
+}
